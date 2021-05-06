@@ -10,9 +10,13 @@ I will be using a DOIT ESP32 DEVKIT V1 as this gives me wifi capability and I ha
 
 For the software side I will be using visual studio code with the extension [PlatformIO](https://platformio.org/).
 
+#Getting started with PlatformIO
+As I have never used PlatformIO before it took a while to get used to setting up projects etc.
+[Here](https://www.youtube.com/watch?v=JmvMvIphMnY&ab_channel=DroneBotWorkshop) is a guide on how to get started.
+
 # Related Project
 After some research I have found a [project by Raphael Baron](https://github.com/rbaron/w-parasite) that could be of use.
-This is a custom ESP32 project that monitors soil moisture and transmits that data via wifi. 
+This is a custom ESP32 project that monitors soil moisture and transmits that data via wifi.
 
 # Starting point
 The first step of getting this project to work is setting up the ADC. Creating a voltage divider with a potentiometer and creating a threshold that will activate an LED.
