@@ -1,9 +1,9 @@
 // This code uses the arduino framework.
 #include <Arduino.h>
 
-//Defines for pins
-#define ledPin 2
-#define moisturePin 4
+// Include other user generated code
+#include "config.h"
+#include "wifi.h"
 
 // Set up global variables
 int moistureVal = 0;
@@ -12,6 +12,10 @@ int moistureVal = 0;
 void setup() {
   // Setup serial
   Serial.begin(9600);
+
+  // Set up WiFi
+  connectWiFi(WiFi_SSID, WiFi_PASS);
+
   // initialize and set up pins.
   pinMode(ledPin, OUTPUT);
   pinMode(moisturePin, INPUT);
