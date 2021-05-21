@@ -2,4 +2,4 @@
 .vscode
 
 # Config contains sensitive data. Use lib/config_template.h as a base for your own.
-lib/config.h
+config.h

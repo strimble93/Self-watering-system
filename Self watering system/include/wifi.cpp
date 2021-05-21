@@ -1,12 +1,13 @@
-// This file is used for connecting an arduino to wifi
-#include "wifi.h"
+#include <Arduino.h>
+#include <WiFi.h>
 
-void connectWiFi(SSID, PASS)    {
+// This file is used for connecting an arduino to wifi
+void connectWiFi()    {
     // Inform user of entering this command.
     Serial.println("Attempting to connect to WiFi");
 
     // Set up the WiFi connection
-    WiFi.begin(SSID, PASS);
+    WiFi.begin(WIFI_SSID, WIFI_PASS);
     
     // While not connected say connecting
     while(WiFi.status() != WL_CONNECTED)    {

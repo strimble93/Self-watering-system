@@ -5,6 +5,10 @@
 #include "config.h"
 #include "wifi.h"
 
+//Defines for pins
+#define ledPin 2
+#define moisturePin 34
+
 // Set up global variables
 int moistureVal = 0;
 
@@ -13,12 +17,12 @@ void setup() {
   // Setup serial
   Serial.begin(9600);
 
-  // Set up WiFi
-  connectWiFi(WiFi_SSID, WiFi_PASS);
-
   // initialize and set up pins.
   pinMode(ledPin, OUTPUT);
   pinMode(moisturePin, INPUT);
+
+  // Set up WiFi
+  connectWiFi();
 }
 
 // the loop function runs over and over again forever
