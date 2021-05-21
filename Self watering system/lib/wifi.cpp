@@ -6,10 +6,10 @@ void connectWiFi(SSID, PASS)    {
     Serial.println("Attempting to connect to WiFi");
 
     // Set up the WiFi connection
-    WiFi.Begin(SSID, PASS);
+    WiFi.begin(SSID, PASS);
     
     // While not connected say connecting
-    while(WiFi.Status() != WL_CONNECTED)    {
+    while(WiFi.status() != WL_CONNECTED)    {
         delay(500);
         Serial.println("Connecting to WiFi...");
     }
