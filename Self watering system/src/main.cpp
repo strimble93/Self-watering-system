@@ -3,7 +3,7 @@
 
 // Include other user generated code
 #include "config.h"
-#include "wifi.h"
+#include "MyWiFi.h"
 
 //Defines for pins
 #define ledPin 2
@@ -22,7 +22,7 @@ void setup() {
   pinMode(moisturePin, INPUT);
 
   // Set up WiFi
-  connectWiFi();
+  connectWiFi(WIFI_SSID, WIFI_PASS);
 }
 
 // the loop function runs over and over again forever
